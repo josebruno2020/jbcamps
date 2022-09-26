@@ -1,0 +1,4 @@
+.text {
+  color: var(--color-text-primary);
+  font-size: 1.5rem;
+}

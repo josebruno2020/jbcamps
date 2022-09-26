@@ -1,0 +1,13 @@
+.portfolioRow {
+  display: flex;
+  justify-content: space-evenly;
+  gap: .85rem;
+  margin-bottom: .9rem;
+}
+
+.skill {
+  line-height: 1.1rem;
+  font-size: 1rem;
+  text-align: right;
+  margin-top: 1.2rem;
+}
