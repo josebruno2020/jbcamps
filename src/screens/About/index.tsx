@@ -11,7 +11,7 @@ export default function About(): JSX.Element {
         <h3 className={styles.title}>Sobre mim</h3>
         <p className={styles.description}>Natural cidade de Maringá, estado do Paraná, Brasil. Tenho {age()} anos e estou sempre em busca de novos desafios.</p>
         <p className={styles.description}>Sou um Desenvolvedor Backend apaixonado em tecnologia, adquirindo novos conhecimentos. Atualmente trabalho com Node.js e Typescript. Possuo uma paixão pela linguagem PHP, a primeira que aprendi.</p>
-        <p className={styles.description}>Gosto de testes unitários, de código limpo e de seguir regra dos escoteiros: "Sempre deixe mais limpo do que encontrou". Isso tento fazer em meus códigos e projetos.</p>
+        <p className={styles.description}>Gosto de testes unitários, de código limpo e de seguir regra dos escoteiros: &quot;Sempre deixe mais limpo do que encontrou&quot;. Isso tento fazer em meus códigos e projetos.</p>
       
         <Technologies />
       </main>

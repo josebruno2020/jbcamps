@@ -4,7 +4,6 @@ import styles from './Menu.module.css'
 
 export default function Menu(): JSX.Element {
   const {route} = useRouter()
-  console.log(route)
   return (
     <nav className={styles.navBar}>
       <div className={route === '/' ? styles.active : ''}>
