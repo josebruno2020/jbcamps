@@ -1,6 +1,6 @@
-import { PortfolioCompanyProps } from "../../components/PortfolioCompany/PortfolioCompanyProps";
+import { CareerCompanyProps } from "../../components/CareerCompany/CareerCompanyProps";
 
-export const portfolioData: PortfolioCompanyProps[] = [
+export const portfolioData: CareerCompanyProps[] = [
   {
     title: "Ligue Telecom",
     start: "Abril",

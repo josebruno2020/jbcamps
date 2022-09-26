@@ -4,7 +4,6 @@ import styles from './Text.module.css';
 export function Text({as, isCenter, children, ...props}: TextProps): JSX.Element {
   const Tag = as || 'p';
   const textAlign = isCenter ? 'center' : 'left'
-  console.log(textAlign)
   return (
     <>
       <Tag >{children}</Tag>

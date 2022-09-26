@@ -1,7 +1,7 @@
-import styles from './PortfolioCompany.module.css';
-import { PortfolioCompanyProps } from './PortfolioCompanyProps';
+import styles from './CareerCompany.module.css';
+import { CareerCompanyProps } from './CareerCompanyProps';
 
-export function PortfolioCompany({title, start, finish, skilss, align}: PortfolioCompanyProps): JSX.Element {
+export function CareerCompany({title, start, finish, skilss, align}: CareerCompanyProps): JSX.Element {
   function divComponent () {
     return (
       <div>
@@ -17,7 +17,7 @@ export function PortfolioCompany({title, start, finish, skilss, align}: Portfoli
   }
 
   return (
-    <div className={styles.portfolioRow}>
+    <div className={styles.careerRow}>
       {align === 'left' ? (
         divComponent()
       ) : (<></>)}

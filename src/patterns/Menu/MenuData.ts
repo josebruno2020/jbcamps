@@ -13,7 +13,7 @@ export const menuData: Menu[] = [
     path: "/about",
   },
   {
-    name: "Portfólio",
-    path: "/portfolio",
+    name: "Carreira",
+    path: "/career",
   },
 ];
