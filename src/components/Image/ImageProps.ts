@@ -4,4 +4,5 @@ export interface ImageProps {
   width: number;
   src: string;
   alt: string;
+  title?: string;
 }

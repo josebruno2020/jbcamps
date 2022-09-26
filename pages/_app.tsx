@@ -3,6 +3,7 @@ import type { AppProps } from 'next/app'
 import Head from 'next/head'
 import { useEffect, useState } from 'react';
 import Menu from '../src/patterns/Menu';
+import Footer from '../src/patterns/Footer';
 
 function MyApp({ Component, pageProps }: AppProps) {
   const [activeTheme, setActiveTheme] = useState("dark");
@@ -19,6 +20,7 @@ function MyApp({ Component, pageProps }: AppProps) {
       </Head>
       <Menu />
       <Component {...pageProps} />
+      <Footer />
     </>
     
   )

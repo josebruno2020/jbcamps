@@ -34,20 +34,14 @@
   border-radius: 50%;
 }
 
-.name {
-  padding: .5rem;
-  text-align: center;
-  color: var(--color-text-primary);
-  font-size: 1.5rem;
-}
 
 .personalInformation a{
   color: var(--color-text-secondary);
-  transition: .3s all;
+  transition: .1s all;
 }
 
 .personalInformation a:hover{
-  opacity: .6;
+  opacity: .8;
 }
 
 
@@ -68,7 +62,16 @@
 }
 
 
+.personalInformationIcon  {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+
 
 @media (max-width: 600px) {
-  
+  .title {
+    font-size: 2rem;
+  }
 }

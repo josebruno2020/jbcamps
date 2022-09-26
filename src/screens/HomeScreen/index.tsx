@@ -2,12 +2,15 @@ import Footer from '../../patterns/Footer'
 import styles from './HomeScreen.module.css'
 import Image from '../../components/Image'
 import SocialMedia from '../../components/SocialMedia'
+import PersonalContact from '../../patterns/PersonalContact'
+import HeadTitle from '../../components/HeadTitle'
 
 export default function HomeScreen(): JSX.Element {
   
 
   return (
     <>
+      <HeadTitle>JBcamps DEV - Home</HeadTitle>
       <div className={styles.container}>
 
         <main className={styles.main}>
@@ -19,12 +22,9 @@ export default function HomeScreen(): JSX.Element {
             <Image alt="Jbcamps" height={300}  width={300} src="/images/jbcamps.png" />
             
           </span>
-          <p className={styles.name}>José Bruno Campanholi dos Santos</p>
 
-          <div className={styles.personalInformation}>
-            <p>Telefone: ---</p>
-            <p>E-mail: <a href="mailto:josebrunocampanholi@gmail.com?subject=Vim do site">josebrunocampanholi@gmail.com</a></p>
-          </div>
+          <PersonalContact />
+          
 
           <div className={styles.socialMedia}>
             <SocialMedia link="https://github.com/josebruno2020" name="Git Hub" src="/images/github.png" />
@@ -35,15 +35,7 @@ export default function HomeScreen(): JSX.Element {
         </main>
         
       </div>
-      <Footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by JB
-        </a>
-      </Footer>
+      
     </>
   )
 }

@@ -18,6 +18,7 @@ a {
 body[data-theme="light"] {
   --color-text-primary: #27201a;
   --color-text-secondary: #076963;
+  --color-text-terciary: #07696359;
   --color-bg-primary: #fff;
   --color-bg-toggle: #1e90ff;
 }
@@ -25,6 +26,7 @@ body[data-theme="light"] {
 body[data-theme="dark"] {
   --color-text-primary: #e3e3e3;
   --color-text-secondary: #fc7a1e;
+  --color-text-terciary: #fc7a1e6c;
   --color-bg-primary: #15232d;
   --color-bg-toggle: #a9a9a9;
 }
@@ -36,6 +38,6 @@ body {
   transition: background 0.25s ease-in-out;
 }
 
-h1, h3 {
+h1, h3, h4, h5 {
   color: var(--color-text-secondary);
 }

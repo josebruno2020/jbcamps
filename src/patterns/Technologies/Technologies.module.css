@@ -1,0 +1,54 @@
+.section {
+  padding: 0;
+}
+
+.title {
+  margin: 5rem 0 0 0 ;
+  font-size: 3rem;
+
+  text-align: center;
+
+
+}
+
+.technologies {
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.technology {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  width: 200px;
+  padding: 0 1rem;
+
+  margin-top: 2rem;
+}
+
+@keyframes fade {
+  0% {opacity: 0;}
+  25% {opacity: .25;}
+  50% {opacity:  .5;}
+  100% {opacity: 1;}
+}
+
+.technologyName {
+  margin-top: 2rem;
+  opacity: 1;
+}
+
+
+.technologyName:hover {
+  animation: fade 3s;
+}
+
+@media (max-width: 600px) {
+  .technologies {
+    justify-content: center;
+  }
+}
