@@ -1,0 +1,36 @@
+.portfolioCard {
+  width: 300px;
+  padding: .5rem 0;
+  border: 1px solid var(--color-text-secondary);
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  transition: .2s all;
+}
+
+.portfolioCard:hover {
+  color: var(--color-text-primary);
+  background-color: var(--color-text-terciary);
+}
+
+.reposRow {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.repos {
+  display: flex;
+  align-items: center;
+}
+
+
+.description {
+  text-align: justify;
+  line-height: 1.5rem;
+}
