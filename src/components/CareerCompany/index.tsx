@@ -4,10 +4,12 @@ import { CareerCompanyProps } from './CareerCompanyProps';
 export function CareerCompany({title, start, finish, skilss, align}: CareerCompanyProps): JSX.Element {
   function divComponent () {
     return (
-      <div>
+      <div style={{
+        textAlign: align
+      }}>
         <h4>{title}</h4>
-        <span><strong>{start}</strong>{' '}{finish}</span>
-        <ul>
+        <span><strong>{start}</strong>{' - '}{finish}</span>
+        <ul className={styles.skillList}>
           {skilss.map((skill, index) => (
             <ul className={styles.skill} key={index}>{skill}</ul>
           ))}

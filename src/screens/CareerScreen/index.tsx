@@ -1,4 +1,5 @@
 import HeadTitle from '../../components/HeadTitle'
+import PortfolioCard from '../../components/PortfolioCard'
 import { Text } from '../../components/Text'
 import Title from '../../components/Title'
 import Career from '../../patterns/Career'
@@ -13,9 +14,17 @@ export default function CareerScreen(): JSX.Element {
         <Text isCenter={true}>Aqui vou mostrar minha trajetória </Text>
         <Career />
 
-        <Title>Portfólio</Title>
+        <Title isSubtitle={true} as="h3">Portfólio</Title>
 
-        <Text isCenter={true}>Alguns projetos que realizei como freelancer 😉</Text>
+        <Text isCenter={true} >Alguns projetos que realizei como freelancer 😉</Text>
+
+        <section className={styles.portfolio}>
+          
+          <PortfolioCard />
+          <PortfolioCard />
+          
+          
+        </section>
       </main>
     </>
   )

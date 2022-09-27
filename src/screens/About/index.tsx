@@ -8,7 +8,7 @@ export default function About(): JSX.Element {
   return (
     <>
       <HeadTitle>JBcamps DEV - Sobre Mim</HeadTitle>
-      <main  className={styles.container}>
+      <main >
         <Title>Sobre mim</Title>
         <p className={styles.description}>Natural cidade de Maringá, estado do Paraná, Brasil. Tenho {age()} anos e estou sempre em busca de novos desafios.</p>
         <p className={styles.description}>Sou um Desenvolvedor Backend apaixonado em tecnologia, adquirindo novos conhecimentos. Atualmente trabalho com Node.js e Typescript. Possuo uma paixão pela linguagem PHP, a primeira que aprendi.</p>

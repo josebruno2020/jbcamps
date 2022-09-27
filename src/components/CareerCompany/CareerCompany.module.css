@@ -5,9 +5,16 @@
   margin-bottom: .9rem;
 }
 
+.skillList {
+  margin: 0;
+  padding: 0;
+}
+
+
+
 .skill {
   line-height: 1.1rem;
   font-size: 1rem;
-  text-align: right;
   margin-top: 1.2rem;
+  text-align: justify;
 }

@@ -23,7 +23,6 @@ export default function HomeScreen(): JSX.Element {
 
           <PersonalContact />
           
-
           <div className={styles.socialMedia}>
             <SocialMedia link="https://github.com/josebruno2020" name="Git Hub" src="/images/social/github.png" />
             <SocialMedia link="https://www.linkedin.com/in/jos%C3%A9-bruno-campanholi-dos-santos-354502204/" name="Linkedin" src="/images/social/linkedin.png" />
