@@ -1,21 +1,26 @@
-import Footer from '../../patterns/Footer'
 import styles from './HomeScreen.module.css'
 import Image from '../../components/Image'
 import SocialMedia from '../../components/SocialMedia'
 import PersonalContact from '../../patterns/PersonalContact'
 import HeadTitle from '../../components/HeadTitle'
 import Title from '../../components/Title'
+import { useRouter } from 'next/router'
+import { LangData } from './LangData'
+import { LocaleType } from '../../lang/LocaleType'
+
 
 export default function HomeScreen(): JSX.Element {
+  const {locale} = useRouter()
+  const index = locale as LocaleType
+  const data = LangData[index]
   
-
   return (
     <>
       <HeadTitle>JBcamps DEV - Home</HeadTitle>
       <div className={styles.container}>
 
         <main className={styles.main}>
-          <Title>Olá 👋</Title>
+          <Title>{data.title}</Title>
 
           <span className={styles.image}>
             <Image alt="Jbcamps" height={300}  width={300} src="/images/jbcamps.png" />

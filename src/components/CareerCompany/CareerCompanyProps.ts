@@ -3,5 +3,6 @@ export interface CareerCompanyProps {
   start: string;
   finish: string;
   skilss: string[];
+  link?: string;
   align: "left" | "right";
 }

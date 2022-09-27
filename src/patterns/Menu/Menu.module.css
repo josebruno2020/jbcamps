@@ -22,3 +22,40 @@
   background-color: var(--color-text-terciary);
   color: white;
 }
+
+.langs {
+  float: right;
+  text-align: center;
+  padding: 14px 16px;
+  cursor: pointer;
+  width: 100px;
+}
+
+.langsMap {
+  position: absolute;
+  margin-top: .4rem;
+  transition: .2s all;
+  background-color: #333;
+  max-width: 100px;
+}
+
+.dNone {
+  opacity: 0;
+}
+
+.langActive a {
+  color: var(--color-text-secondary);
+}
+
+
+.arrowDown {
+  margin-left: .5rem;
+  margin-bottom: .1rem;
+  border: solid var(--color-text-primary);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+

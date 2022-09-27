@@ -1,8 +1,9 @@
 .careerRow {
   display: flex;
-  justify-content: space-evenly;
-  gap: .85rem;
-  margin-bottom: .9rem;
+  justify-content: space-between;
+  gap: .9rem;
+  margin-bottom: 1.5rem;
+  width: 100%;
 }
 
 .skillList {
@@ -10,11 +11,18 @@
   padding: 0;
 }
 
-
-
 .skill {
-  line-height: 1.1rem;
-  font-size: 1rem;
-  margin-top: 1.2rem;
-  text-align: justify;
+  line-height: 2rem;
+  font-size: 1.2rem;
+  margin-top: .8rem;
+  padding-inline-start: 10px;
+  /* padding-inline-end: 10px; */
+}
+
+
+@media (max-width: 600px) {
+  .skill {
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+  }
 }
