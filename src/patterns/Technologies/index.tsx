@@ -6,14 +6,14 @@ export default function Technologies(): JSX.Element {
   return (
     <section className={styles.section}>
       <h4 className={styles.title}>Tecnologias</h4>
-        <div className={styles.technologies}>          
-          {technologiesData.map((tech, index) => (
-            <div className={styles.technology} key={index}>
-              <Image alt={tech.title} src={tech.src} height={70} width={70} title={tech.title} />
-              <span className={styles.technologyName}>{tech.description}</span>
-            </div>
-          ))}
-        </div>
+      <div className={styles.technologies}>          
+        {technologiesData.map((tech, index) => (
+          <div className={styles.technology} key={index}>
+            <Image alt={tech.title} src={`/images/lang/${tech.file}`} height={70} width={70} title={tech.title} />
+            <span className={styles.technologyName}>{tech.description}</span>
+          </div>
+        ))}
+      </div>
     </section>
   )
 }

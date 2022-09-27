@@ -1,7 +1,7 @@
 import { differenceInYears } from "../../utils/years";
 
 export interface Technology {
-  src: string;
+  file: string;
   title: string;
   description: string;
 }
@@ -9,27 +9,27 @@ export interface Technology {
 export const technologiesData: Technology[] = [
   {
     title: "PHP",
-    src: "/images/php.png",
+    file: "php.png",
     description: `PHP - ${differenceInYears("2019")} anos`,
   },
   {
     title: "NodeJS",
-    src: "/images/nodejs.png",
+    file: "nodejs.png",
     description: `NodeJS - ${differenceInYears("2020")} anos`,
   },
   {
     title: "Typescript",
-    src: "/images/typescript.png",
+    file: "typescript.png",
     description: `TS - ${differenceInYears("2020")} anos`,
   },
   {
     title: "Laravel",
-    src: "/images/laravel.png",
+    file: "laravel.png",
     description: `Laravel - ${differenceInYears("2019")} anos`,
   },
   {
     title: "Vue",
-    src: "/images/vue.png",
+    file: "vue.png",
     description: `Vue - ${differenceInYears("2020")} anos`,
   },
 ];
