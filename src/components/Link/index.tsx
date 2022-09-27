@@ -1,12 +1,13 @@
 import { LinkProps } from "./LinkProps";
 import NextLink from 'next/link'
+import React from "react";
 
 
 
-export default function Link({as, href, children, className}: LinkProps): JSX.Element {
+export default function Link({as, href, children, className, locale}: LinkProps): JSX.Element {
   const Tag = as || 'a'
   return (
-    <NextLink href={href} >
+    <NextLink locale={locale} href={href} >
       <Tag className={className}>{children}</Tag>
     </NextLink>
   )

@@ -1,13 +1,18 @@
 import styles from './CareerCompany.module.css';
 import { CareerCompanyProps } from './CareerCompanyProps';
 
-export function CareerCompany({title, start, finish, skilss, align}: CareerCompanyProps): JSX.Element {
+export function CareerCompany({title, start, finish, skilss, align, link}: CareerCompanyProps): JSX.Element {
   function divComponent () {
     return (
       <div style={{
         textAlign: align
       }}>
-        <h4>{title}</h4>
+        {link ? (
+          <a href={link} target="_blank" rel="noreferrer"><h2>{title}</h2></a>
+        ) : (
+          <h2>{title}</h2>
+        )}
+        
         <span><strong>{start}</strong>{' - '}{finish}</span>
         <ul className={styles.skillList}>
           {skilss.map((skill, index) => (

@@ -6,11 +6,11 @@ import HeadTitle from '../../components/HeadTitle'
 import Title from '../../components/Title'
 import { useRouter } from 'next/router'
 import { LangData } from './LangData'
+import { LocaleType } from '../../lang/LocaleType'
 
-type LocaleType = 'en-US' | 'pt-BR'
 
 export default function HomeScreen(): JSX.Element {
-  const {locale, asPath} = useRouter()
+  const {locale} = useRouter()
   const index = locale as LocaleType
   const data = LangData[index]
   

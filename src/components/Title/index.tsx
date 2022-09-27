@@ -12,7 +12,7 @@ export default function Title({as, children, isSubtitle, ...props}: TitleProps):
           margin: 0;
           line-height: 1.15;
           font-size: 3rem;
-          margin-bottom: 3rem;
+          margin-bottom: 2rem;
           text-align: center;
           margin-top: ${marginTop};
         }
