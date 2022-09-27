@@ -5,7 +5,7 @@ import styles from './PortfolioCard.module.css'
 export default function PortfolioCard(): JSX.Element {
   return (
     <article className={styles.portfolioCard}>
-      <a href="https://monintox.online/" target="_blank"><h3>Monintox</h3></a>
+      <a href="https://monintox.online/" target="_blank" rel="noreferrer"><h3>Monintox</h3></a>
 
       <div className={styles.reposRow}>
         <p className={styles.description}>Sistema de gerenciamento da Clínica de desintoxicação de Sarandi/PR, emitindo notificações seguindo o padrão do Governo. Existe um chat interno dentro do sistema. (Ainda em fase final de desevolvimento).</p>
