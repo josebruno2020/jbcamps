@@ -2,15 +2,17 @@ import { useRouter } from 'next/router'
 import { useState } from 'react'
 import Link from '../../components/Link'
 import styles from './Menu.module.css'
-import { menuData } from './MenuData'
+import {LangData} from './MenuData'
+import {GetCurrentLang} from "../../utils/GetCurrentLang";
 
 export default function Menu(): JSX.Element {
   const {route, locale, locales, asPath} = useRouter()
   const [isShowLangs, setIsShowLangs] = useState(false)
+  const data = LangData[GetCurrentLang()]
 
   return (
     <nav className={styles.navBar}>
-      {menuData.map((item, index) => (
+      {data.map((item, index) => (
         <div className={route === item.path ? styles.active : ''} key={index}>
           <Link href={item.path}>{item.name}</Link>
         </div>
