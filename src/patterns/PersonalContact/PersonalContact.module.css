@@ -2,7 +2,7 @@
   padding: .5rem;
   text-align: center;
   color: var(--color-text-primary);
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 
@@ -19,4 +19,8 @@
   display: flex;
   justify-content: space-between;
   gap: 1rem;
+}
+
+.description {
+  font-size: 0.9rem;
 }

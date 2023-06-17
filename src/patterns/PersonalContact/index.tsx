@@ -12,9 +12,9 @@ export default function PersonalContact(): JSX.Element {
           <a href={contact.link} target="_blank" key={index} rel="noreferrer">
             <p className={styles.contactIcon}>
               <span>
-                <Image alt="Whatsapp" height={20} width={20} src={`/images/social/${contact.file}`} />
+                <Image alt={contact.title} height={20} width={20} src={`/images/social/${contact.file}`} />
               </span>
-              <span>{contact.description}</span>
+              <span className={styles.description}>{contact.description}</span>
             </p>
           </a>
         ))}

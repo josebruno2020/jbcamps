@@ -23,7 +23,7 @@ export default function HomeScreen(): JSX.Element {
           <Title>{data.title}</Title>
 
           <span className={styles.image}>
-            <Image alt="Jbcamps" height={300}  width={300} src="/images/jbcamps.png" />
+            <Image alt="Jbcamps" height={210}  width={210} src="/images/jbcamps.png" />
           </span>
 
           <PersonalContact />

@@ -11,7 +11,7 @@ export default function Title({as, children, isSubtitle, ...props}: TitleProps):
         ${Tag} {
           margin: 0;
           line-height: 1.15;
-          font-size: 3rem;
+          font-size: 2.5rem;
           margin-bottom: 2rem;
           text-align: center;
           margin-top: ${marginTop};
